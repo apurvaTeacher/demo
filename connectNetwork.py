@@ -11,3 +11,7 @@ device = {
 with ConnectHandler(**device) as conn:
     output = conn.send_command("show ip int br")
     print(output)
+
+with ConnectHandler(**device) as conn:
+    output = conn.send_command("sh version")
+    print(output)
